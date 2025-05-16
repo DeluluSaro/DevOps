@@ -35,7 +35,7 @@ git push origin ( branch name )---> push it into github
 
 
 
- git branch  (branch name) ---> creates new branch
+ git branch  (branch name) ---> creates new branch in the repo
 
  git checkout (branch name)---> to move the head towards this branch there by your commit messages will go into it and updates to 
 

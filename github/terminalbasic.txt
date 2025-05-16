@@ -16,7 +16,7 @@ git add . ---> adds all the files to the staging area  we can add individual fil
 
 git commit -m  "" -----> commit with message this message is viewed at gui of github
 
-git log ----> to see the history of all the commits
+git log ----> to see the history of all the comits
 
 git reset (hash id) ---> resets the project to particular commit and unstage all the edits without deleting them
 

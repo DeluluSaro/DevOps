@@ -27,6 +27,36 @@ git stash clear --> the changes u have done should be cleared
 
 
 
+----------------------------------git hub starts---------------------------
+git remote add origin (web link) ---> remote - to deals with link , origin -name fo accessing it 
+
+
+git push origin ( branch name )---> push it into github
+
+
+
+ git branch  (branch name) ---> creates new branch
+
+ git checkout (branch name)---> to move the head towards this branch there by your commit messages will go into it and updates to 
+
+
+suppose 2 developers named a and b working in a project and a checkout branch main ,and b is working in branch feature
+if we need to merge these 2 chnages together  ,the people who had checkout branch (here a has checkout main) should write git merge feature 
+to merge  2 codes.
+
+
+fork ---> to contribute to an existinng project
+
+pull request to update the main project that u have forked
+
+
+
+
+
+
+
+
+
 
 
 

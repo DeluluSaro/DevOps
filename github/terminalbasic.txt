@@ -1,0 +1,32 @@
+ls- to list all files in that folder
+
+mkdir - create a new folder
+
+cd-change directory to another folder
+
+git init-to initialize the repository create a hidden files
+
+ls -a --> gives hidden files
+
+touch names.txt--->create a new file 
+
+git status ----> gives what files are not added into the git like a history 
+
+git add . ---> adds all the files to the staging area  we can add individual files too
+
+git commit -m  "" -----> commit with message this message is viewed at gui of github
+
+git log ----> to see the history of all the commits
+
+git reset (hash id) ---> resets the project to particular commit and unstage all the edits without deleting them
+
+git stash- ---> to keep a private workspace  if use this it will go to the lastest commit u have done to the project  and hereu can make the chnages
+git stash pop ---> the chnages u have done should be used in main repo of your project
+git stash clear --> the changes u have done should be cleared 
+
+
+
+
+
+
+

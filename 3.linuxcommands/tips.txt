@@ -1,0 +1,94 @@
+ls                        - Lists folders and files in the current directory
+ls -a                     - Shows hidden files
+ls -l                     - Gives detailed info (permissions, owner, date)
+ls -al                    - Combines -a and -l, shows detailed info including hidden files
+ls -R                     - Lists all files in current and subdirectories recursively
+
+cd                        - Changes the directory
+cd (path)                 - Goes to specified path
+cd ..                     - Moves one folder up
+
+pwd                       - Shows current working directory (Print Working Directory)
+
+which                     - Finds the path of a command (only if in environment variables)
+
+echo $PATH                - Displays all directories in PATH environment variable
+
+cat                       - Concatenate, shows contents of files
+cat > filename            - Creates a new file, write text, Ctrl+C to exit
+cat file1 file2 > new.txt - Combines contents of multiple files into a new file
+
+man (command)             - Shows manual/info about the command (e.g., man ls)
+
+tr                        - Translates characters (e.g., case conversion)
+|                         - Pipe operator, passes output of one command as input to another
+cat file.txt | tr a-z A-Z > tot.txt  - Converts file content to uppercase and saves
+
+>                         - Redirects output to overwrite file
+>>                        - Appends output to the end of a file
+
+mkdir foldername          - Creates a folder
+mkdir -p home/test/girl   - Creates nested directories
+
+touch filename            - Creates an empty file
+
+cp source dest            - Copies content from source file to destination file
+cp -R folder1 folder2     - Copies entire directory including its contents
+
+mv oldname newname        - Renames or moves a file
+mv file.txt ../newname.txt- Moves and renames file at once
+
+rm filename               - Deletes a file permanently
+rm -R foldername          - Removes an entire folder and its contents
+
+sudo                      - Executes command as superuser (admin)
+
+df                        - Displays disk space of all mounted partitions
+du                        - Shows disk usage of current directory
+
+head filename             - Shows first few lines of a file
+tail filename             - Shows last few lines of a file
+
+diff file1 file2          - Shows line-by-line differences between two files
+
+plocate "*.txt"           - Finds all .txt files quickly using the plocate database
+
+vi filename               - Opens file in vi editor
+(ESC + :wq + ENTER)       - Saves and exits vi editor
+
+find . -type f -name "file.txt"      - Finds files by name in current directory
+find . -type d -name "foldername"    - Finds folders by name
+
+chmod u=rwx,g=rw,o-r file.txt        - Changes file permissions (user/group/others)
+u=user, g=group, o=others            - r=read, w=write, x=execute
+
+find . -type f -name "*.txt" -exec rm -rf {} +  
+                                 - Deletes all .txt files ({} is placeholder, + combines multiple files)
+
+grep "Sar" file.txt        - Finds word "Sar" in file (case-sensitive)
+grep -w "Saravana" file.txt- Searches exact word
+grep -i "sara" file.txt    - Case-insensitive search
+
+regex                     - Basic pattern matching e.g., \d = digits, \w = word chars
+
+alias                     - Used to create custom short commands
+
+command1 ; command2       - Runs multiple commands in one line
+
+wget url                  - Downloads files from the internet
+
+zip                       - Compresses files into a zip archive
+unzip                     - Extracts files from a zip archive
+
+nslookup domain.com       - Gets IP address of domain
+
+netstat                   - Shows all open ports and network connections
+
+cut                       - Extracts sections of each line of a file
+
+&&                        - Runs second command only if first succeeds
+||                        - Runs second command if first fails
+!                         - Negates the command or avoids execution (e.g., !rm)
+
+echo "Hello" > file.txt   - Writes "Hello" and overwrites file
+echo "Hello" >> file.txt  - Appends "Hello" to file without deleting existing content

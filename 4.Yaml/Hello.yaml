@@ -1,0 +1,17 @@
+"hello" : "Iam Hello Baki"
+
+1 : "susj"
+
+# declaring a list
+"list":
+  - "item1"
+  - "item2"
+  - "item3"
+
+
+"cities" : [new-york, london, paris]
+
+{baki:"hero",age:25,city:"istanbul"}
+
+
+# above is used to store the data in yaml format

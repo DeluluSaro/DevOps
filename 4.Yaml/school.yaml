@@ -1,0 +1,17 @@
+---
+School:
+- name: DPS School
+  principal: Mr. Sharma
+  Students:
+  - name: Saravana
+    age: 15
+    class: pedophile
+  - name: Suresh
+    age: 16
+    class: 10th Grade
+  - name: Ravi
+    age: 14
+    class: 9th Grade
+
+
+    # this code is given by school.jsoon using json to yaml converter

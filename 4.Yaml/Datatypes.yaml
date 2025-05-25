@@ -1,0 +1,66 @@
+# String
+myself: Saravana
+myself2: "Saravana"
+myself3: 'Saravana'
+
+# Integer
+num: 233
+
+# Float
+num2: 233.33
+
+# Boolean
+bool: true
+bool2: false 
+booss : no # can use for boolean n,N,no,false
+booless: yes # can use for boolean y,Y,yes,true
+
+
+
+#specify the data type
+numss : !!int 23
+positiveNumber : !!int 23
+negativeNumber : !!int -23  
+binaryNumber : !!int 0b1010
+floatingPoint : !!float 23.45
+exponentialNumber :  23E56
+infinity : !!foat .inf
+notANumber :  .nan
+
+
+#String
+
+name: !!str Sarsvana
+name2: !!str "Saravana"
+name3: !!str 'Saravana'
+
+#null
+
+nullValue: !!null null
+nullValue2: !!null ~  
+nullValue3: !!null
+nullValue4: !!null '' # empty string is also null
+
+#null key
+~ : "this is a null key"
+
+
+#array
+arr : [saravna,sjbs,iss,iss]
+array2: 
+  - saravana
+  - sjbs
+  - iss
+  
+{
+  arr: [saravna,sjbs,iss,iss],
+}
+
+#dates and times
+date: !!timestamp 2023-10-01
+date2: !!timestamp 2023-10-01 12:00:00 
+date3: !!timestamp 2023-10-01 12:00:00 +05:30
+
+
+
+

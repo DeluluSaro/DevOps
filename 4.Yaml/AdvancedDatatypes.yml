@@ -1,0 +1,83 @@
+student : !!seq
+- name
+- marks
+
+
+# some of the keys of the seq will be empty , it is known as sparse sequence
+
+sparse seq: !!seq
+- name: Saravana
+- marks: 100
+-
+- age: 25
+
+
+# nested sequence
+
+- 
+ -name: Saravana
+  marks: 100
+  age: 25
+-
+ -name: Baki
+  marks: 90
+  age: 30
+
+
+#MAPS OR KEY-VALUE PAIRS
+maps : !!maps
+- name: Saravana
+  marks: 100
+  age: 25
+  role:
+    - comapny: "Google"
+    - position: "Software Engineer"
+
+
+#same as nested
+mapSen : 
+name: "sarovana"
+role : {company: "Google", job: "Software Engineer"
+}
+  
+
+#keys may have dupliacte values'
+
+dup : !!pairs
+ -job: "teacher"
+ -job: "engineer"
+
+
+ #set will allow you to have unique values
+set : !!set
+  - "banana"
+  - "banana" # duplicate will be ignored
+  
+
+
+  #dictionary omap
+dict: !!omap
+  -saravana:
+    -name: "saraba"
+    -age: 25
+  -akshitta:
+    -name: "akshitta"
+    -age: 30
+
+
+
+
+# resusing properties  -inorder to reuse the exixtsing properties , and reduce work (anchoirs) can oveeride too
+likes: &likes
+ -fruit: "banana"
+ -hero: "Thalapathy Vijay"
+
+
+Person1: 
+ name: "Saravana"
+ <<: *likes
+
+Person2:
+ name: "Akshitta"
+ <<: *likes
+ hero: "Thalapathy Ajith" # overriding the hero property
